@@ -10,7 +10,7 @@ function Bottombar() {
   const pathname = usePathname();
 
   return (
-    <section className='bottombar'>
+    <section className='bottombar overflow-hidden'>
       <div className='bottombar_container'>
         {sidebarLinks.map((link) => {
           const isActive =
