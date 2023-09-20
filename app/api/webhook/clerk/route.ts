@@ -4,7 +4,7 @@
 
 // Resource: https://docs.svix.com/receiving/verifying-payloads/why
 // It's a good practice to verify webhooks. Above article shows why we should do it
-import { Webhook, WebhookRequiredHeaders } from "svix";
+import {  WebhookRequiredHeaders } from "svix";
 import { headers } from "next/headers";
 
 import { IncomingHttpHeaders } from "http";
@@ -17,6 +17,7 @@ import {
   removeUserFromCommunity,
   updateCommunityInfo,
 } from "@/lib/actions/community.actions";
+import { Webhook } from "svix";
 
 // Resource: https://clerk.com/docs/integration/webhooks#supported-events
 // Above document lists the supported events
