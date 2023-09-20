@@ -35,7 +35,7 @@ export default function RootLayout({
           <main className='flex flex-row'>
             <LeftSidebar />
             <section className='main-container w-full  overflow-hidden'>
-              <div className=' max-w-4xl overflow-hidden'>{children}</div>
+              <div className='w-full max-w-4xl overflow-hidden'>{children}</div>
             </section>
             {/* @ts-ignore */}
             {/* <RightSidebar /> */}
