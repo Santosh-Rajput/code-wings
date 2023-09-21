@@ -84,7 +84,8 @@ function ThreadCard({
                     alt='heart'
                     width={24}
                     height={24}
-                    className='cursor-pointer object-contain'
+                    className='cursor-pointer object-contain stroke-current text-white inline-block h-12 w-12" '
+                     stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                   />
                 </Link>
                 <Image
@@ -123,7 +124,7 @@ function ThreadCard({
         />
       </div>
 
-      {isComment && comments.length > 0 && (
+      {!isComment && comments.length > 0 && (
         <div className='ml-1 mt-3 flex items-center gap-2'>
           {comments.slice(0, 2).map((comment, index) => (
             <Image
