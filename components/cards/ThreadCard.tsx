@@ -57,7 +57,7 @@ function ThreadCard({
               />
             </Link>
 
-            <div className='thread-card_bar z-10' />
+            <div className='thread-card_bar ' />
           </div>
 
           <div className='flex w-full flex-col'>
